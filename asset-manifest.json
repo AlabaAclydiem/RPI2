@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/RPI2/static/css/main.39e8dab5.css",
+    "main.js": "/RPI2/static/js/main.8455270c.js",
+    "static/media/Ivan_Shamyakin.jpg": "/RPI2/static/media/Ivan_Shamyakin.2553fc6d2620596cce75.jpg",
+    "static/media/ScripskayaAvatar.jpg": "/RPI2/static/media/ScripskayaAvatar.229539a2a91e6aea6a62.jpg",
+    "static/media/PastukhouAvatar.jpg": "/RPI2/static/media/PastukhouAvatar.6d52c87d3129a1041238.jpg",
+    "static/media/Maksim_Tank.jpg": "/RPI2/static/media/Maksim_Tank.62209db2e1b87f3ccfbd.jpg",
+    "static/media/YankovaAvatar.jpg": "/RPI2/static/media/YankovaAvatar.bbbe689c38d8ceaf9173.jpg",
+    "static/media/Jakub_Kolas.jpg": "/RPI2/static/media/Jakub_Kolas.32c626a614f3a69ec57d.jpg",
+    "static/media/Ivan_Melej.jpg": "/RPI2/static/media/Ivan_Melej.4d88c7661ade7236bcac.jpg",
+    "static/media/Maxim_Bagdanovich.jpg": "/RPI2/static/media/Maxim_Bagdanovich.15a3a79bc2e31a8bc73d.jpg",
+    "static/media/Yanka_Kupala.jpg": "/RPI2/static/media/Yanka_Kupala.0878c4afa96f2f95bd10.jpg",
+    "static/media/im3.jpg": "/RPI2/static/media/im3.0eea9c8ce9f08256fefc.jpg",
+    "static/media/mb2.jpg": "/RPI2/static/media/mb2.72af17682e233014dd25.jpg",
+    "static/media/is1.jpg": "/RPI2/static/media/is1.a1a165462a861cc69541.jpg",
+    "static/media/mt3.jpg": "/RPI2/static/media/mt3.734c8e13bf93c9e881af.jpg",
+    "static/media/yk1.jpg": "/RPI2/static/media/yk1.d6d756bf95b1aa149a04.jpg",
+    "static/media/im2.jpg": "/RPI2/static/media/im2.7f2571ee1ea494ec30cd.jpg",
+    "static/media/im1.jpg": "/RPI2/static/media/im1.2b62f35fe773a27a16b6.jpg",
+    "index.html": "/RPI2/index.html",
+    "main.39e8dab5.css.map": "/RPI2/static/css/main.39e8dab5.css.map",
+    "main.8455270c.js.map": "/RPI2/static/js/main.8455270c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39e8dab5.css",
+    "static/js/main.8455270c.js"
+  ]
+}

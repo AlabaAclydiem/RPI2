@@ -1,0 +1,48 @@
+.main-page {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.switch {
+    display: flex;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.avatar {
+    margin: 10px;
+}
+
+.link {
+    width: 80px;
+    font-size: small;
+}

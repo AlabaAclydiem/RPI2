@@ -1,0 +1,37 @@
+.writer-page {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.switch {
+    display: flex;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.chrono-div {
+    width: 100%;
+    height: 480px;
+    margin-top: 35px;
+    display: "flex"
+}
+
+.paper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.youtube {
+    margin-top: 20px;
+}
+
+.map-text {
+    margin-bottom: 10px;   
+}

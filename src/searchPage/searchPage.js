@@ -10,7 +10,7 @@ import "./style.css"
 export default function SearchPage(props) {
     return (
         <div className="search-page">
-            <LangButton stateChange={props.stateChange}/>
+            <LangButton stateChange={props.stateChange} language={props.language}/>
             <Nav />
             <Desc />
             <Search />

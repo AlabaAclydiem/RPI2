@@ -6,8 +6,9 @@ import MainPage from "./mainPage/mainPage"
 import SearchPage from "./searchPage/searchPage"
 import WriterPage from "./writerPage/writerPage"
 
+import * as wData from "./data"
+
 import "./style.css"
-import * as State from "./state"
 
 class App extends React.Component {
   constructor(props) {
@@ -17,8 +18,9 @@ class App extends React.Component {
       currentLanguage: "ru"
     }
 
-    this.stateChange = () => {
-      this.setState({currentLanguage: State.curL})
+    this.stateChange = (value) => {
+      this.setState({currentLanguage: value})
+      wData.localization.setLanguage(value)
     }
   }
 
@@ -26,12 +28,12 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Routes>
-          <Route index path="/RPI2/" element={<MainPage stateChange={this.stateChange} />} />
-          <Route path="/RPI2/search" element={<SearchPage stateChange={this.stateChange} />} />
-          <Route path="/RPI2/writer" element={<WriterPage stateChange={this.stateChange} />} />
+          <Route index path="/RPI2/" element={<MainPage stateChange={this.stateChange} language={this.state.currentLanguage} />} />
+          <Route path="/RPI2/search/" element={<SearchPage stateChange={this.stateChange} language={this.state.currentLanguage} />} />
+          <Route path="/RPI2/writer/:id" element={<WriterPage stateChange={this.stateChange} language={this.state.currentLanguage} />} />
         </Routes>
       </BrowserRouter>
-    );
+    )
   }
 }
 

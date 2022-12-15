@@ -2,14 +2,18 @@ import React from "react"
 import { Button } from "@mui/material"
 
 import * as wData from "../data"
-import * as State from "../state"
 
 import "./style.css"
 
 export default function LangButton(props) {
     const handleClick = () => {
-        State.switchLanguage()
-        props.stateChange()
+        var curL
+        if (props.language === "ru") {
+            curL = "en"
+        } else {
+            curL = "ru"
+        }
+        props.stateChange(curL)
     }
 
     return (

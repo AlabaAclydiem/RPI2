@@ -9,17 +9,19 @@ import Video from "./Video"
 import Dot from "./Dot"
 
 import "./style.css"
+import { useParams } from "react-router-dom"
 
 export default function WriterPage(props) {
+    let { id } = useParams()
     return (
         <div class="writer-page">
-            <LangButton stateChange={props.stateChange}/>
+            <LangButton stateChange={props.stateChange} language={props.language}/>
             <Nav />
-            <Intro />
-            <Chronology />
-            <Gallery />
-            <Video />
-            <Dot />
+            <Intro writer={id}/>
+            <Chronology writer={id}/>
+            <Gallery writer={id}/>
+            <Video writer={id}/>
+            <Dot writer={id}/>
         </div>
     )
 }

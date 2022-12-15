@@ -2,12 +2,11 @@ import React from "react"
 import { Chrono } from "react-chrono"
 
 import * as wData from "../data"
-import * as State from "../state"
 
 import "./style.css"
 
-export default function Chronology() {
-    const items = wData.localization.writerBio[State.curW]
+export default function Chronology(props) {
+    const items = wData.localization.writerBio[props.writer]
 
     return (
         <div className="chrono-div">

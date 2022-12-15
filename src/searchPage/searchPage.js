@@ -1,6 +1,9 @@
 import React from "react"
 
-import { Nav, Desc, Search, LangButton } from "./components"
+import LangButton from "./LangButton"
+import Nav from "./Nav"
+import Desc from "./Desc"
+import Search from "./Search"
 
 import "./style.css"
 

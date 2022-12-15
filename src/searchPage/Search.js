@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Tabs, Tab, Paper, TextField, Button } from "@mui/material"
+import { Paper, TextField, Button } from "@mui/material"
 import { Box } from "@mui/system"
 
 import * as wData from "../data"
@@ -7,47 +7,7 @@ import * as State from "../state"
 
 import "./style.css"
 
-export function LangButton(props) {
-    const handleClick = () => {
-        State.switchLanguage()
-        props.stateChange()
-    }
-
-    return (
-        <div className="switch"><Button onClick={() => {handleClick()}} variant="contained" sx={{ ':hover': {bgcolor: "beige"}, bgcolor: "white", color: "black", flexBasis: 100, borderRadius: 1, margin: 1 }}>{wData.localization.langSwitch}</Button></div>
-    )
-}
-
-export function Nav(props) {
-    const handleChange = (event, value) => {
-        if (State.curP !== value) {
-            State.setPage(value);
-            if (value === 0) State.randWNum()
-        }
-        props.stateChange()
-    }
-
-    return (
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-            <Tabs value={State.curP} onChange={handleChange}>
-                <Tab index={0} label={wData.localization.tabHome} />
-                <Tab index={1} label={wData.localization.tabList} />
-            </Tabs>
-        </Box>
-    )
-} 
-
-export function Desc() {
-    return (
-        <Paper className="description" elevation={12} sx={{ bgcolor: "white" }}>
-            <h2>{wData.localization.searchDesc}</h2>
-            <h4>{wData.localization.searchDescDetails1}<br />{wData.localization.searchDescDetails2}<br />{wData.localization.searchDescDetails3}</h4>
-        </Paper>
-    )
-}
-
-
-export function Search(props) {
+export default function Search(props) {
     const handleClick = (value) => {
         State.setWNum(value)
         State.setPage(2)
@@ -69,5 +29,3 @@ export function Search(props) {
         </Paper>
     )
 }
-
-

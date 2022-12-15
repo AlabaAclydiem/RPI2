@@ -1,6 +1,10 @@
 import React from "react"
 
-import { Nav, Desc, Day, DevTeam, LangButton } from "./сomponents"
+import LangButton from "./LangButton"
+import Nav from "./Nav"
+import Desc from "./Desc"
+import Day from "./Day"
+import DevTeam from "./DevTeam"
 
 import "./style.css"
 
@@ -14,4 +18,4 @@ export default function MainPage(props) {
             <DevTeam />
         </div>
     )
-}
+}   

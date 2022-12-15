@@ -1,6 +1,12 @@
 import React from "react"
 
-import { Nav, Intro, Chronology, Gallery, Video, Dot, LangButton } from "./components"
+import LangButton from "./LangButton"
+import Nav from "./Nav"
+import Intro from "./Intro"
+import Chronology from "./Chronology"
+import Gallery from "./Gallery"
+import Video from "./Video"
+import Dot from "./Dot"
 
 import "./style.css"
 

@@ -19,7 +19,7 @@ export default function Search() {
     return (
         <Paper sx={{ bgcolor: "white",  borderRadius: 1, padding: 2, display: "flex", flexDirection: "column", alignItems: "center", width: "fit-content"}} elevation={12}>
             <TextField sx={{ ':hover': {bgcolor: "white"}, margin: 2 }} value={template} onChange={(event) => {setTemplate(event.target.value)}} placeholder={wData.localization.searchPlaceholder} label={wData.localization.searchLabel} variant="outlined"/>
-            <Box sx={{ maxWidth: 500, flexDirection: "column", bgcolor: "white", borderRadius: 1, display: "flex", alignItems: "center"}}>{element}</Box>
+            <Box sx={{ maxWidth: 350, flexDirection: "column", bgcolor: "white", borderRadius: 1, display: "flex", alignItems: "center"}}>{element}</Box>
             <Outlet />
         </Paper>
     )

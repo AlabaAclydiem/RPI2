@@ -9,7 +9,7 @@ import * as State from "../state"
 
 import "./style.css"
 
-export default function Day(props) {
+export default function Day() {
     return (
         <Paper className="day" elevation={12} sx={{ bgcolor: "white" }}>
             <Container maxWidth="lg" sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
@@ -20,7 +20,7 @@ export default function Day(props) {
                         <h2>{wData.localization.writerYears[State.curW]}</h2>
                     </Container>
                     <h4>{wData.localization.writerInfo[State.curW]}</h4>
-                    <Link className="_link" to="/writer"><Box sx={{ maxWidth: 500, bgcolor: "white", borderRadius: 1, display: "flex", alignItems: "center"}}><Button variant="contained" sx={{ ':hover': {bgcolor: "white"}, bgcolor: "beige", color: "black", width: 350, borderRadius: 1, margin: 1 }}>{wData.localization.onWriterPage}</Button></Box></Link>
+                    <Link className="_link" to="/RPI2/writer"><Box sx={{ maxWidth: 500, bgcolor: "white", borderRadius: 1, display: "flex", alignItems: "center"}}><Button variant="contained" sx={{ ':hover': {bgcolor: "white"}, bgcolor: "beige", color: "black", width: 350, borderRadius: 1, margin: 1 }}>{wData.localization.onWriterPage}</Button></Box></Link>
                 </Container>
             </Container>
             <Outlet />

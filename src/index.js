@@ -20,16 +20,15 @@ class App extends React.Component {
     this.stateChange = () => {
       this.setState({currentLanguage: State.curL})
     }
-
   }
 
   render() {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage stateChange={this.stateChange} />} />
-          <Route path="/search" element={<SearchPage stateChange={this.stateChange} />} />
-          <Route path="/writer" element={<WriterPage stateChange={this.stateChange} />} />
+          <Route index path="/RPI2/" element={<MainPage stateChange={this.stateChange} />} />
+          <Route path="/RPI2/search" element={<SearchPage stateChange={this.stateChange} />} />
+          <Route path="/RPI2/writer" element={<WriterPage stateChange={this.stateChange} />} />
         </Routes>
       </BrowserRouter>
     );

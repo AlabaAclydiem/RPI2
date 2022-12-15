@@ -8,7 +8,7 @@ import * as State from "../state"
 
 import "./style.css"
 
-export default function Search(props) {
+export default function Search() {
     const handleClick = (value) => {
         State.setWNum(value)
     }
@@ -24,7 +24,7 @@ export default function Search(props) {
     return (
         <Paper sx={{ bgcolor: "white",  borderRadius: 1, padding: 2, display: "flex", flexDirection: "column", alignItems: "center", width: "fit-content"}} elevation={12}>
             <TextField sx={{ ':hover': {bgcolor: "white"}, margin: 2 }} value={template} onChange={(event) => {setTemplate(event.target.value)}} placeholder={wData.localization.searchPlaceholder} label={wData.localization.searchLabel} variant="outlined"/>
-            <Link className="_link" to="/writer"><Box sx={{ maxWidth: 500, flexWrap: "wrap", bgcolor: "white", borderRadius: 1, display: "flex", alignItems: "center"}}>{element}</Box></Link>
+            <Link className="_link" to="/RPI2/writer"><Box sx={{ maxWidth: 500, flexWrap: "wrap", bgcolor: "white", borderRadius: 1, display: "flex", alignItems: "center"}}>{element}</Box></Link>
             <Outlet />
         </Paper>
     )

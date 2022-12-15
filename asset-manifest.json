@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RPI2/static/css/main.2881a817.css",
-    "main.js": "/RPI2/static/js/main.bb56f900.js",
+    "main.js": "/RPI2/static/js/main.a3921905.js",
     "static/media/Ivan_Shamyakin.jpg": "/RPI2/static/media/Ivan_Shamyakin.2553fc6d2620596cce75.jpg",
     "static/media/ScripskayaAvatar.jpg": "/RPI2/static/media/ScripskayaAvatar.229539a2a91e6aea6a62.jpg",
     "static/media/PastukhouAvatar.jpg": "/RPI2/static/media/PastukhouAvatar.6d52c87d3129a1041238.jpg",
@@ -20,10 +20,10 @@
     "static/media/im1.jpg": "/RPI2/static/media/im1.2b62f35fe773a27a16b6.jpg",
     "index.html": "/RPI2/index.html",
     "main.2881a817.css.map": "/RPI2/static/css/main.2881a817.css.map",
-    "main.bb56f900.js.map": "/RPI2/static/js/main.bb56f900.js.map"
+    "main.a3921905.js.map": "/RPI2/static/js/main.a3921905.js.map"
   },
   "entrypoints": [
     "static/css/main.2881a817.css",
-    "static/js/main.bb56f900.js"
+    "static/js/main.a3921905.js"
   ]
 }

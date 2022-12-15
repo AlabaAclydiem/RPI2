@@ -12,7 +12,7 @@ export default function Search() {
     var element = []
     for (let index = 0; index < wData.localization.writerNames.length; index++) {
         if (template === "" || wData.localization.writerNames[index].toLowerCase().indexOf(template.toLowerCase()) !== -1) {
-            element.push(<Link className="_link" to={"/RPI2/writer/" + index}><Button variant="contained" sx={{ ':hover': {bgcolor: "white"}, bgcolor: "beige", color: "black", flexBasis: 500, borderRadius: 1, margin: 1 }}>{wData.localization.writerNames[index]}</Button></Link>)
+            element.push(<Link className="_link" to={"/RPI2/writer/" + index}><Button variant="contained" sx={{ ':hover': {bgcolor: "white"}, bgcolor: "beige", color: "black", width: 350, borderRadius: 1, margin: 1 }}>{wData.localization.writerNames[index]}</Button></Link>)
         }
     }
 

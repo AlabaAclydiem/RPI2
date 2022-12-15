@@ -1,7 +1,8 @@
 import React from "react"
-import { Paper, Button } from "@mui/material"
+import { Paper, Button, Box } from "@mui/material"
 import { Container } from "@mui/system"
 import { Image } from "mui-image"
+import { Outlet, Link } from "react-router-dom"
 
 import * as wData from "../data"
 import * as State from "../state"
@@ -9,12 +10,6 @@ import * as State from "../state"
 import "./style.css"
 
 export default function Day(props) {
-    const handleClick = (value) => {
-        State.setWNum(value)
-        State.setPage(2)
-        props.stateChange()
-    }
-
     return (
         <Paper className="day" elevation={12} sx={{ bgcolor: "white" }}>
             <Container maxWidth="lg" sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
@@ -25,9 +20,10 @@ export default function Day(props) {
                         <h2>{wData.localization.writerYears[State.curW]}</h2>
                     </Container>
                     <h4>{wData.localization.writerInfo[State.curW]}</h4>
-                    <Container maxWidth="lg" sx={{ margin: 3, display: "flex", justifyContent: "center"}}><Button onClick={() => {handleClick(State.curW)}} variant="contained" sx={{ ':hover': {bgcolor: "white"}, bgcolor: "beige", color: "black", flexBasis: 500, borderRadius: 1, margin: 1 }}>{wData.localization.onWriterPage}</Button></Container>
+                    <Link className="_link" to="/writer"><Box sx={{ maxWidth: 500, bgcolor: "white", borderRadius: 1, display: "flex", alignItems: "center"}}><Button variant="contained" sx={{ ':hover': {bgcolor: "white"}, bgcolor: "beige", color: "black", width: 350, borderRadius: 1, margin: 1 }}>{wData.localization.onWriterPage}</Button></Box></Link>
                 </Container>
             </Container>
+            <Outlet />
         </Paper>
     )
 }

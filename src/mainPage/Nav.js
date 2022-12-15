@@ -1,27 +1,20 @@
 import React from "react"
 import { Tabs, Tab } from "@mui/material"
 import { Box } from "@mui/system"
+import { Outlet, Link } from "react-router-dom"
 
 import * as wData from "../data"
-import * as State from "../state"
 
 import "./style.css"
 
-export default function Nav(props) {
-    const handleChange = (event, value) => {
-        if (State.curP !== value) {
-            State.setPage(value);
-            if (value === 0) State.randWNum()
-        }
-        props.stateChange()
-    }
-
+export default function Nav() {
     return (
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-            <Tabs value={State.curP} onChange={handleChange}>
-                <Tab index={0} label={wData.localization.tabHome} />
-                <Tab index={1} label={wData.localization.tabList} />
+            <Tabs value="">
+                <Link className="_link" to="/"><Tab index={0} label={wData.localization.tabHome} /></Link>
+                <Link className="_link" to="/search"><Tab index={1} label={wData.localization.tabList} /></Link>
             </Tabs>
+            <Outlet />
         </Box>
     )
 } 

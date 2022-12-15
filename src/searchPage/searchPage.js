@@ -11,9 +11,9 @@ export default function SearchPage(props) {
     return (
         <div className="search-page">
             <LangButton stateChange={props.stateChange}/>
-            <Nav stateChange={props.stateChange} /* curPage={props.curPage} clickBtn={props.clickBtn} *//>
+            <Nav />
             <Desc />
-            <Search stateChange={props.stateChange} />
+            <Search />
         </div>
     )
 }

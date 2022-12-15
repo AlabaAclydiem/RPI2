@@ -12,9 +12,9 @@ export default function MainPage(props) {
     return (
         <div className="main-page">
             <LangButton stateChange={props.stateChange}/>
-            <Nav stateChange={props.stateChange} />
+            <Nav />
             <Desc />
-            <Day stateChange={props.stateChange} /> 
+            <Day /> 
             <DevTeam />
         </div>
     )

@@ -14,7 +14,7 @@ export default function WriterPage(props) {
     return (
         <div class="writer-page">
             <LangButton stateChange={props.stateChange}/>
-            <Nav stateChange={props.stateChange} />
+            <Nav />
             <Intro />
             <Chronology />
             <Gallery />

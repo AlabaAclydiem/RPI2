@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Paper, TextField, Button } from "@mui/material"
 import { Box } from "@mui/system"
+import { Outlet, Link } from "react-router-dom"
 
 import * as wData from "../data"
 import * as State from "../state"
@@ -10,8 +11,6 @@ import "./style.css"
 export default function Search(props) {
     const handleClick = (value) => {
         State.setWNum(value)
-        State.setPage(2)
-        props.stateChange()
     }
 
     const [template, setTemplate] = useState("")
@@ -25,7 +24,8 @@ export default function Search(props) {
     return (
         <Paper sx={{ bgcolor: "white",  borderRadius: 1, padding: 2, display: "flex", flexDirection: "column", alignItems: "center", width: "fit-content"}} elevation={12}>
             <TextField sx={{ ':hover': {bgcolor: "white"}, margin: 2 }} value={template} onChange={(event) => {setTemplate(event.target.value)}} placeholder={wData.localization.searchPlaceholder} label={wData.localization.searchLabel} variant="outlined"/>
-            <Box sx={{ maxWidth: 500, flexWrap: "wrap", bgcolor: "white", borderRadius: 1, display: "flex", alignItems: "center"}}>{element}</Box>
+            <Link className="_link" to="/writer"><Box sx={{ maxWidth: 500, flexWrap: "wrap", bgcolor: "white", borderRadius: 1, display: "flex", alignItems: "center"}}>{element}</Box></Link>
+            <Outlet />
         </Paper>
     )
 }

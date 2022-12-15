@@ -1,5 +1,6 @@
 import React from "react"
 import * as ReactDOMClient from "react-dom/client"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import MainPage from "./mainPage/mainPage"
 import SearchPage from "./searchPage/searchPage"
@@ -13,26 +14,25 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      currentPageNumber: 0,
       currentLanguage: "ru"
     }
 
     this.stateChange = () => {
-      this.setState({currentPageNumber: State.curP, currentLanguage: State.curL})
+      this.setState({currentLanguage: State.curL})
     }
 
   }
 
   render() {
-    switch(this.state.currentPageNumber) {
-      case 1:
-        return <SearchPage stateChange={this.stateChange} />
-      case 2:
-        return <WriterPage stateChange={this.stateChange} />
-      case 0:
-      default:
-          return <MainPage stateChange={this.stateChange} />
-    }
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage stateChange={this.stateChange} />} />
+          <Route path="/search" element={<SearchPage stateChange={this.stateChange} />} />
+          <Route path="/writer" element={<WriterPage stateChange={this.stateChange} />} />
+        </Routes>
+      </BrowserRouter>
+    );
   }
 }
 

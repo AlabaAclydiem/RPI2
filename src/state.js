@@ -9,11 +9,6 @@ export const setWNum = (value) => {
     curW = value
 }
 
-export var curP = 0
-export const setPage = (value) => {
-    curP = value
-}
-
 export var curL = "ru"
 export const switchLanguage = () => {
     if (curL === "ru") {
